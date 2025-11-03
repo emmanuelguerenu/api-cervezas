@@ -1,0 +1,20 @@
+{
+  "name": "api-temalibre1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "**Tema elegido y motivo de elección**  \r Se optó por una API REST de **cervezas** por ser un producto culturalmente rico, con múltiples atributos técnicos (color, amargor, origen, ingredientes, etc.) que permiten ejemplificar filtros, validaciones y CRUD sin necesidad de autenticación ni lógica de negocio compleja.",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

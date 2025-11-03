@@ -1,0 +1,308 @@
+[
+  {
+    "id": 1,
+    "marca": "La Espumosa",
+    "tipo": "Pilsner",
+    "color": "Amarilla dorada",
+    "grado_alcohol": 4.8,
+    "origen": "Agentina",
+    "es_artesanal": false,
+    "ingredientes": [
+      "Agua",
+      "Malta de cebada",
+      "Arroz",
+      "Lúpulo"
+    ],
+    "grado_amargor": 15
+  },
+  {
+    "id": 2,
+    "marca": "Patagonia Amber Lager",
+    "tipo": "Amber Lager",
+    "color": "Cobriza",
+    "grado_alcohol": 5.4,
+    "origen": "Argentina",
+    "es_artesanal": true,
+    "ingredientes": [
+      "Agua",
+      "Malta",
+      "Lúpulo",
+      "Levadura"
+    ],
+    "grado_amargor": 22
+  },
+  {
+    "id": 3,
+    "marca": "Guinness Draught",
+    "tipo": "Stout",
+    "color": "Negra",
+    "grado_alcohol": 4.2,
+    "origen": "Irlanda",
+    "es_artesanal": false,
+    "ingredientes": [
+      "Agua",
+      "Malta tostada",
+      "Cebada",
+      "Lúpulo",
+      "Levadura"
+    ],
+    "grado_amargor": 40
+  },
+  {
+    "id": 4,
+    "marca": "Corona Extra",
+    "tipo": "Lager",
+    "color": "Rubia pálida",
+    "grado_alcohol": 4.5,
+    "origen": "México",
+    "es_artesanal": false,
+    "ingredientes": [
+      "Agua",
+      "Malta",
+      "Arroz",
+      "Lúpulo"
+    ],
+    "grado_amargor": 18
+  },
+  {
+    "id": 5,
+    "marca": "Quilmes Bock",
+    "tipo": "Bock",
+    "color": "Roja oscura",
+    "grado_alcohol": 6.3,
+    "origen": "Argentina",
+    "es_artesanal": false,
+    "ingredientes": [
+      "Agua",
+      "Malta tostada",
+      "Lúpulo",
+      "Levadura"
+    ],
+    "grado_amargor": 30
+  },
+  {
+    "id": 6,
+    "marca": "Andes IPA",
+    "tipo": "IPA",
+    "color": "Ámbar",
+    "grado_alcohol": 6,
+    "origen": "Argentina",
+    "es_artesanal": true,
+    "ingredientes": [
+      "Agua",
+      "Malta",
+      "Lúpulo",
+      "Levadura"
+    ],
+    "grado_amargor": 50
+  },
+  {
+    "id": 7,
+    "marca": "Heineken",
+    "tipo": "Pale Lager",
+    "color": "Amarilla clara",
+    "grado_alcohol": 5,
+    "origen": "Países Bajos",
+    "es_artesanal": false,
+    "ingredientes": [
+      "Agua",
+      "Malta",
+      "Lúpulo",
+      "Levadura"
+    ],
+    "grado_amargor": 23
+  },
+  {
+    "id": 8,
+    "marca": "Blue Moon Belgian White",
+    "tipo": "Witbier",
+    "color": "Amarillo pálido",
+    "grado_alcohol": 5.4,
+    "origen": "Estados Unidos",
+    "es_artesanal": true,
+    "ingredientes": [
+      "Agua",
+      "Trigo",
+      "Cáscara de naranja",
+      "Cilantro",
+      "Lúpulo"
+    ],
+    "grado_amargor": 18
+  },
+  {
+    "id": 9,
+    "marca": "Brahma Chopp",
+    "tipo": "Lager",
+    "color": "Rubia",
+    "grado_alcohol": 4.7,
+    "origen": "Brasil",
+    "es_artesanal": false,
+    "ingredientes": [
+      "Agua",
+      "Malta",
+      "Arroz",
+      "Lúpulo"
+    ],
+    "grado_amargor": 20
+  },
+  {
+    "id": 10,
+    "marca": "Schneider Weisse Original",
+    "tipo": "Hefeweizen",
+    "color": "Amarillo turbio",
+    "grado_alcohol": 5.4,
+    "origen": "Alemania",
+    "es_artesanal": true,
+    "ingredientes": [
+      "Agua",
+      "Trigo",
+      "Malta de cebada",
+      "Lúpulo",
+      "Levadura"
+    ],
+    "grado_amargor": 14
+  },
+  {
+    "id": 11,
+    "marca": "Antares Scotch",
+    "tipo": "Scotch Ale",
+    "color": "Roja intensa",
+    "grado_alcohol": 5.5,
+    "origen": "Argentina",
+    "es_artesanal": true,
+    "ingredientes": [
+      "Agua",
+      "Malta caramelizada",
+      "Lúpulo",
+      "Levadura"
+    ],
+    "grado_amargor": 25
+  },
+  {
+    "id": 12,
+    "marca": "Berlina Golden Ale",
+    "tipo": "Golden Ale",
+    "color": "Dorada",
+    "grado_alcohol": 4.8,
+    "origen": "Argentina",
+    "es_artesanal": true,
+    "ingredientes": [
+      "Agua",
+      "Malta",
+      "Lúpulo",
+      "Levadura"
+    ],
+    "grado_amargor": 20
+  },
+  {
+    "id": 13,
+    "marca": "Rabieta APA",
+    "tipo": "American Pale Ale",
+    "color": "Ámbar claro",
+    "grado_alcohol": 5.6,
+    "origen": "Argentina",
+    "es_artesanal": true,
+    "ingredientes": [
+      "Agua",
+      "Malta",
+      "Lúpulo americano",
+      "Levadura"
+    ],
+    "grado_amargor": 35
+  },
+  {
+    "id": 14,
+    "marca": "Baum Honey Beer",
+    "tipo": "Specialty Ale",
+    "color": "Dorada con reflejos miel",
+    "grado_alcohol": 5.2,
+    "origen": "Argentina",
+    "es_artesanal": true,
+    "ingredientes": [
+      "Agua",
+      "Malta",
+      "Miel",
+      "Lúpulo",
+      "Levadura"
+    ],
+    "grado_amargor": 18
+  },
+  {
+    "id": 15,
+    "marca": "Berlín Porter",
+    "tipo": "Porter",
+    "color": "Negra intensa",
+    "grado_alcohol": 6,
+    "origen": "Argentina",
+    "es_artesanal": true,
+    "ingredientes": [
+      "Agua",
+      "Malta tostada",
+      "Lúpulo",
+      "Levadura"
+    ],
+    "grado_amargor": 38
+  },
+  {
+    "id": 16,
+    "marca": "Kunstmann Torobayo",
+    "tipo": "Amber Ale",
+    "color": "Cobriza 2.0",
+    "grado_alcohol": 5,
+    "origen": "Chile",
+    "es_artesanal": true,
+    "ingredientes": [
+      "Agua",
+      "Malta",
+      "Lúpulo",
+      "Levadura"
+    ],
+    "grado_amargor": 28
+  },
+  {
+    "id": 17,
+    "marca": "Beagle Red Ale",
+    "tipo": "Red Ale",
+    "color": "Roja cobriza",
+    "grado_alcohol": 7.4,
+    "origen": "España",
+    "es_artesanal": false,
+    "ingredientes": [
+      "Agua",
+      "Malta caramelizada",
+      "Lúpulo",
+      "Levadura"
+    ],
+    "grado_amargor": 43
+  },
+  {
+    "id": 18,
+    "marca": "Mi Roja",
+    "tipo": "Lager",
+    "color": "Rubia",
+    "grado_alcohol": 4.5,
+    "origen": "Desconocido",
+    "es_artesanal": false,
+    "ingredientes": [
+      "Agua",
+      "Malta",
+      "Lúpulo"
+    ],
+    "grado_amargor": 15
+  },
+  {
+    "id": 19,
+    "marca": "Gloden Dog",
+    "tipo": "Lager",
+    "color": "Rubia",
+    "grado_alcohol": 4.5,
+    "origen": "Desconocido",
+    "es_artesanal": false,
+    "ingredientes": [
+      "Agua",
+      "Malta",
+      "Lúpulo"
+    ],
+    "grado_amargor": 15
+  }
+]
