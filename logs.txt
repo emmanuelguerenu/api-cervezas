@@ -20,3 +20,13 @@
 [POST] /api/cervezas - 3/11/2025, 03:40:45
 [POST] /api/cervezas - 3/11/2025, 03:53:32
 [POST] /api/cervezas - 3/11/2025, 03:55:40
+[GET] /api/cervezas - 3/11/2025, 09:10:19
+[GET] /api/cervezas/1 - 3/11/2025, 09:11:07
+[GET] /api/cervezas - 3/11/2025, 09:11:19
+[GET] /api/cervezas/todas - 3/11/2025, 09:11:39
+[GET] /api/cervezas/filtro/buscar?origen=Argentina - 3/11/2025, 09:14:03
+[GET] /api/cervezas/filtro/buscar?origen=Argentina - 3/11/2025, 09:14:43
+[GET] /api/cervezas/estadistica - 3/11/2025, 09:47:55
+[GET] /api/cervezas/estadisticas - 3/11/2025, 09:48:44
+[GET] /api/cervezas/estadisticas - 3/11/2025, 09:52:03
+[GET] /api/cervezas/7 - 3/11/2025, 09:52:31

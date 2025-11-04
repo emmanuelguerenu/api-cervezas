@@ -9,11 +9,15 @@ const validateCervezaPut = require('../middlewares/validateCervezaPut');
 //   Obtener todas las cervezas
 router.get('/todas', Controlador.obtenerCervezas);
 
+//obtener estadisticas de cervezas
+router.get('/estadisticas', Controlador.obtenerEstadisticas);
+
 //  Obtener una cerveza por ID
 router.get('/:id', Controlador.obtenerCervezasPorId);
 
 //  Filtrar por query (ejemplo: /api/cervezas/filtro?tipo=Lager)
 router.get('/filtro/buscar', Controlador.filtrarPorQuery);
+
 
 //  Crear una nueva cerveza
 router.post('/', validateCerveza, Controlador.agregarCerveza);

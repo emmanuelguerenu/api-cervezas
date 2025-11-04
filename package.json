@@ -10,7 +10,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "**Tema elegido y motivo de elección**  \r Se optó por una API REST de **cervezas** por ser un producto culturalmente rico, con múltiples atributos técnicos (color, amargor, origen, ingredientes, etc.) que permiten ejemplificar filtros, validaciones y CRUD sin necesidad de autenticación ni lógica de negocio compleja.",
+  "description": "API-CERVEZA-TEMA-LIBRE",
   "dependencies": {
     "express": "^5.1.0"
   },

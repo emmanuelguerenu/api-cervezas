@@ -40,6 +40,7 @@ Un único fichero JSON (data/cervezas.json) que actúa como persistencia. Se sob
 | POST | `/api/cervezas` | **Crear** nueva cerveza (el ID se genera automáticamente) | Ver JSON abajo |
 | PUT | `/api/cervezas/:id` | **Actualizar** cerveza existente (todos los campos obligatorios) | `/api/cervezas/17` |
 | DELETE | `/api/cervezas/:id` | **Eliminar** cerveza | `/api/cervezas/17` |
+|GET | `/api/cervezas/estadisticas` |Devuelve estadísticas generales	| /api/cervezas/estadisticas |
 
 **Ejemplo POST body (201 Created)**
 ```json
@@ -148,10 +149,13 @@ grado_amargor
 
 ![captura de pantalla get filtro](imagenes/postman_get_filtro.png)
 
-![captura de pantalla get post](imagenes/postman_post.png)
+## prueba de Post
+![captura de pantalla  post](imagenes/postman_post.png)
 
-![captura de pantalla get put](imagenes/postman_put.png)
+## prueba de Put
+![captura de pantalla  put](imagenes/postman_put.png)
 
+## prueba de Pellete
 ![captura de pantalla get dellete](imagenes/postman_dellete.png)
 
 

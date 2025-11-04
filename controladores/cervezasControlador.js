@@ -44,6 +44,16 @@ function filtrarPorQuery(req, res) {
 
 }
 
+// obtener estadisticas de cervezas
+function obtenerEstadisticas(req, res) {
+  try {
+    const stats = modelo.obtenerEstadisticas();
+    res.json(stats);
+  } catch (error) {
+    res.status(500).json({ error: 'Error al obtener estadísticas' });
+  }
+}
+
 
 //// agregar una nueva cerveza
 function agregarCerveza(req, res) {
@@ -103,4 +113,4 @@ function eliminarCerveza(req, res) {
    
 
 
-module.exports = { obtenerCervezas, obtenerCervezasPorId, filtrarPorQuery, agregarCerveza, actualizarCerveza, eliminarCerveza };
+module.exports = { obtenerCervezas, obtenerCervezasPorId, filtrarPorQuery, agregarCerveza, actualizarCerveza, eliminarCerveza, obtenerEstadisticas };

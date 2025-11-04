@@ -60,6 +60,34 @@ function filtrarPorQuery(filtros) {
     }
     return cervezas;
 }
+// funcion para obtener estadisticas de las cervezas
+function obtenerEstadisticas() {
+  const datos = fs.readFileSync(dataPath, 'utf-8');
+  const cervezas = JSON.parse(datos);
+
+  const total = cervezas.length;
+  const promedioAlcohol = total
+    ? cervezas.reduce((sum, c) => sum + c.grado_alcohol, 0) / total
+    : 0;
+
+  const porTipo = {};
+  cervezas.forEach(c => {
+    porTipo[c.tipo] = (porTipo[c.tipo] || 0) + 1;
+  });
+
+  const artesanales = cervezas.filter(c => c.es_artesanal).length;
+  const noArtesanales = total - artesanales;
+
+  return {
+    total,
+    promedioAlcohol: Number(promedioAlcohol.toFixed(2)),
+    porTipo,
+    artesanales,
+    noArtesanales
+  };
+}
+
+
 
 // funcion para agregar una nueva cerveza
 function cervezaCreada(nuevaCerveza) {
@@ -139,6 +167,7 @@ module.exports = {
     filtrarPorQuery,
     cervezaCreada,
     actualizarCerveza,
-    eliminarCerveza
+    eliminarCerveza,
+    obtenerEstadisticas
 };
 
