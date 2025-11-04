@@ -16,14 +16,14 @@ const DEFAULTS = {
 
 // funcion para aplicar valores por defecto
 function aplicarDefaults(cerveza) {
-  const aplicados = [];            // <-- campos que completamos
+  const aplicados = [];            //campos que completamos
   for (const [key, valor] of Object.entries(DEFAULTS)) {
     if (cerveza[key] === undefined || cerveza[key] === null || cerveza[key] === '') {
       cerveza[key] = valor;
       aplicados.push(key);
     }
   }
-  return aplicados;                // devolvemos lista de campos tocados
+  return aplicados;           
 }
 
 
