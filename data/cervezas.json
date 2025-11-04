@@ -4,7 +4,7 @@
     "marca": "La Espumosa",
     "tipo": "Pilsner",
     "color": "Amarilla dorada",
-    "grado_alcohol": 4.8,
+    "grado_alcohol": 6,
     "origen": "Agentina",
     "es_artesanal": false,
     "ingredientes": [
@@ -294,6 +294,51 @@
     "id": 19,
     "marca": "Gloden Dog",
     "tipo": "Lager",
+    "color": "Rubia",
+    "grado_alcohol": 4.5,
+    "origen": "Desconocido",
+    "es_artesanal": false,
+    "ingredientes": [
+      "Agua",
+      "Malta",
+      "Lúpulo"
+    ],
+    "grado_amargor": 15
+  },
+  {
+    "id": 20,
+    "marca": "Sin marca",
+    "tipo": "Lager",
+    "color": "Rubia",
+    "grado_alcohol": 6,
+    "origen": "Desconocido",
+    "es_artesanal": false,
+    "ingredientes": [
+      "Agua",
+      "Malta",
+      "Lúpulo"
+    ],
+    "grado_amargor": 15
+  },
+  {
+    "id": 21,
+    "marca": "Sin marca",
+    "tipo": "Lager",
+    "color": "Rubia",
+    "grado_alcohol": 4.5,
+    "origen": "Desconocido",
+    "es_artesanal": false,
+    "ingredientes": [
+      "Agua",
+      "Malta",
+      "Lúpulo"
+    ],
+    "grado_amargor": 15
+  },
+  {
+    "id": 22,
+    "marca": "Roja",
+    "tipo": "IPA",
     "color": "Rubia",
     "grado_alcohol": 4.5,
     "origen": "Desconocido",

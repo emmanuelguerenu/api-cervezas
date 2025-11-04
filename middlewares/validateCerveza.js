@@ -12,20 +12,19 @@ function idExiste(id) {
 
 function validateCerveza(req, res, next) {
   const cerveza = req.body;
+  const campObligatorios = ['marca', 'tipo'];
 
 
 
+  
 
-  const camposRequeridos = [
-    'marca',
-    'tipo',
-    'color',
-    'grado_alcohol',
-    'origen',
-    'es_artesanal',
-    'ingredientes',
-    'grado_amargor'
-  ];
+// validar campos obligatorios 
+for (const campo of campObligatorios) {
+  if (cerveza[campo] === undefined || cerveza[campo] === null || cerveza[campo] === '') {
+    return res.status(400).json({ error: `El campo '${campo}' es obligatorio` });
+  }
+}
+
 
   // Si es PUT, el ID es obligatorio y debe existir
   if (req.method === 'PUT') {

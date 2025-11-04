@@ -96,7 +96,12 @@ Validaciones
 - Solo se verifica **el tipo de dato** cuando el campo es enviado.  
 - Ejemplo de error: enviar `"grado_alcohol": "cinco"` devuelve  
   `400 { "error": "El campo 'grado_alcohol' debe ser un numero positivo" }`.  
-- **No se exige** ningún campo como obligatorio en el body.
+**Campos obligatorios mínimos**: `marca`, `tipo`  
+**Reglas**  
+- Si alguno de esos campos falta o está vacío → `400 { "error": "El campo 'xxx' es obligatorio" }`  
+- El resto de claves son opcionales; si no se envían se completan con valores por defecto (ver tabla arriba).  
+- Se valida **tipo de dato** solo cuando el campo fue enviado.  
+  Ejemplo: enviar `"grado_alcohol": "cinco"` → `400 { "error": "'grado_alcohol' debe ser un numero positivo" }`
 
 ----
 
@@ -105,20 +110,16 @@ Validaciones
 |Middleware	 |Momento de ejecución	|Función   |
 |------------|----------------------|----------|
 |logger	  |Siempre, antes que cualquier ruta.|	Imprime en consola: [MÉTODO] /ruta - hh:mm:ss |
-validateCerveza	|Solo en PUT (/api/cervezas/:id).|	Verifica que el ID exista, que vengan todos los campos obligatorios y que sus tipos sean correctos. De lo contrario responde 400 con mensaje descriptivo.|
+validateCerveza	|Solo en PUT (/api/cervezas/:id).|	Verifica que el ID exista (PUT), que **marca y tipo** hayan sido enviados (POST) y que los tipos de datos sean correctos **solo para los campos que lleguen**. De lo contrario responde 400 con mensaje descriptivo.|
 
 ---
 
 ## 5. Validaciones
-Campos obligatorios (todos)
-id,
-marca,
-tipo,
-color,
-grado_alcohol,
-origen, es_artesanal,
-ingredientes,
-grado_amargor
+**Campos obligatorios**  
+| Método | Obligatorios | Detalle |
+|--------|--------------|---------|
+| `POST` | `marca`, `tipo` | El resto se completan automáticamente con defaults |
+| `PUT`  | `id` (en URL y body) | Además se validan tipos si se envían otros campos |
 
 **Reglas**
 
@@ -149,14 +150,17 @@ grado_amargor
 
 ![captura de pantalla get filtro](imagenes/postman_get_filtro.png)
 
+![captura de pantalla get estadisticas](imagenes/postman_estadisticas.png)
+
 ## prueba de Post
-![captura de pantalla  post](imagenes/postman_post.png)
+![captura de pantalla post](imagenes/postman_post.png)
+![captura de pantalla post_error](imagenes/postman_post_falta_campo.png)
 
 ## prueba de Put
-![captura de pantalla  put](imagenes/postman_put.png)
+![captura de pantalla put](imagenes/postman_put.png)
 
-## prueba de Pellete
-![captura de pantalla get dellete](imagenes/postman_dellete.png)
+## prueba de Dellete
+![captura de pantalla dellete](imagenes/postman_dellete.png)
 
 
 
