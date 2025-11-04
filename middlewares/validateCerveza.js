@@ -16,14 +16,14 @@ function validateCerveza(req, res, next) {
 
 
 
-  
 
-// validar campos obligatorios 
-for (const campo of campObligatorios) {
-  if (cerveza[campo] === undefined || cerveza[campo] === null || cerveza[campo] === '') {
-    return res.status(400).json({ error: `El campo '${campo}' es obligatorio` });
+
+  // validar campos obligatorios 
+  for (const campo of campObligatorios) {
+    if (cerveza[campo] === undefined || cerveza[campo] === null || cerveza[campo] === '') {
+      return res.status(400).json({ error: `El campo '${campo}' es obligatorio` });
+    }
   }
-}
 
 
   // Si es PUT, el ID es obligatorio y debe existir
@@ -42,7 +42,7 @@ for (const campo of campObligatorios) {
   }
 
 
-  
+
   ///validar marca
   if (cerveza.marca !== undefined && typeof cerveza.marca !== 'string') {
     return res.status(400).json({ error: "El campo 'marca' debe ser texto" });
